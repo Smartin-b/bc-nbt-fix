@@ -1,0 +1,28 @@
+{
+    "schemaVersion": 1,
+    "id": "bc_nbt_fix",
+    "version": "${version}",
+    "name": "Better Combat NBT Fix",
+    "description": "fixes NBT attributes for multiplayer in BC",
+    "authors": [
+        "smartin"
+    ],
+    "contact": {},
+    "license": "MIT",
+    "icon": "icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "smartin.bc_nbt_fix.fabric.Bc_nbt_fixFabric"
+        ]
+    },
+    "mixins": [
+        "bc_nbt_fix.mixins.json",
+        "bc_nbt_fix-common.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.14.2",
+        "minecraft": ">=1.18.1",
+        "bettercombat": ">=1.0"
+    }
+}
